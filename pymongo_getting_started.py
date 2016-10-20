@@ -7,11 +7,11 @@ from pymongo import MongoClient
 # connect to database
 connection = MongoClient('localhost', 28000)
 
-db = connection.video
+db = connection.test
 
 # handle to names collection
-movies = db.movies
+names = db.names
 
-movie = movies.find_one()
+name = movies.find_one()
 
-print movie
+print name
