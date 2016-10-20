@@ -12,6 +12,6 @@ db = connection.test
 # handle to names collection
 names = db.names
 
-name = movies.find_one()
+item = names.find_one()
 
-print name
+print item["name"]
